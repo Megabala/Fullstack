@@ -1,0 +1,61 @@
+/* OurServices.css */
+.services-container {
+  position: relative;
+}
+.services-content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Add transition effects */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  border-color: #5e72e4; /* Change border color on hover */
+  border-width: 2px; /* Make the border thicker */
+  background-color: #f8f9fa; /* Change background color on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #2d2b2d;
+}
+
+.card p {
+  margin-top: 10px;
+  color: #666666;
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+.service-details {
+  margin-top: 15px;
+}
+
+.service-details div {
+  margin-bottom: 5px;
+}
+
+.card button {
+  margin-top: 10px;
+}

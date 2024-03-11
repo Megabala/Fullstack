@@ -1,0 +1,54 @@
+/* my-bookform.css */
+.my-service-form-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.my-form-heading {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.my-bookform {
+    max-width: 500px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-form-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.my-form-input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(102, 102, 102, 0.5);
+}
+
+.my-form-submit-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.my-form-submit-button:hover {
+    background-color: #555;
+    border: 1px solid #555;
+}

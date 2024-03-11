@@ -1,0 +1,119 @@
+.user-profile {
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -120px; /* Add space between image and cards */
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.left-card {
+  margin-left: 20px;
+  height: 280px;
+  width: 20%; /* Adjust width as needed */
+  margin-bottom: 20px;
+}
+
+.right-card {
+  margin-right: 20px;
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 20px; /* Add padding for form fields */
+}
+
+.right-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-card .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.right-card .form-group label {
+  margin-left:20px;
+  width: 100px; /* Adjust label width as needed */
+  margin-right: 1px; /* Add space between label and input field */
+}
+
+.right-card .form-group input,
+.right-card .form-group select,
+.right-card .form-group textarea {
+  flex: 1; /* Let input fields take remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right-card .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-card button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right-card button:hover {
+  background-color: #45a049;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-card,
+  .left-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .right-card .form-group label {
+    margin-left: 0;
+    margin-bottom: 5px;
+    width: auto;
+  }
+
+  .right-card .form-group {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .right-card .form-group input,
+  .right-card .form-group select,
+  .right-card .form-group textarea {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-card .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-card button {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,88 @@
+/* Aboutus.css */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;  
+ 
+}
+
+.column-one {
+  flex: 3; /* Make the first column occupy more space */
+  margin-left: 30px;
+}
+
+.column-two,
+.column-three {
+  flex: 1; /* Make the second and third columns occupy equal space */
+  margin-left: 30px; /* Adjust margin as needed */
+}
+
+.paragraph {
+  margin-block-start: 0; /* Reset margin */
+  margin-block-end: 0;
+  font-family: sans-serif;
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 26px;
+}
+
+.column-two.paragraph {
+  text-align: center;
+}
+
+.abouthead {
+  color: #2ac4cb;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Courgette, cursive;
+  margin-left: 30px;
+}
+
+.about-container h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Open Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.column-two {
+  border-right: 1px solid #ccc;
+}
+
+.aboutusimage {
+  position: relative; 
+  margin-bottom: 30px;/* Ensure proper positioning for child elements */
+}
+
+.aboutusimage img {
+  position: relative;
+  z-index: 1; 
+  width:100%;
+  height:290px;
+}
+
+.aimageback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77, 23, 202, 0.5); /* Use rgba for transparency */
+  z-index: 2; /* Ensure background color is above the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aimageback h1 {
+  color: white; /* Text color */
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.author{
+  margin-top:60px;
+  margin-right:60px;
+}

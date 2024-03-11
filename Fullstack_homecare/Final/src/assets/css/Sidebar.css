@@ -1,0 +1,60 @@
+/* Sidebar.css */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the sidebar */
+    width: 300px;
+    height: 100%;
+    background-color: #7d2ae8;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Set a higher z-index than the slideshow */
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar when open */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: flex; /* Use flexbox for icon and text alignment */
+    align-items: center; /* Center align the items vertically */
+}
+
+.sidebar li a:hover {
+    color: #fff; /* Change the color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color on hover */
+    border-radius: 5px; /* Add border-radius on hover */
+}
+
+.sidebar li a .svg-inline--fa {
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+.sidebar li a .text {
+    /* margin-left: 10px; Add space between icon and text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Position the button on the top-right corner */
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    z-index: 1001; /* Ensure the close icon appears above other elements */
+}

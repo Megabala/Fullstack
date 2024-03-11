@@ -1,0 +1,168 @@
+/* AdminHome.css */
+
+/* Top statistics section */
+.top-stat {
+  margin-left: 200px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Dashboard container */
+.dash {
+  padding: 10px;
+}
+
+/* Statistics cards */
+.stat,
+.stat1,
+.stat2,
+.stat3 {
+  flex: 1;
+  max-width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-variant: small-caps;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust specific styles for each card */
+.stat1 {
+  background: linear-gradient(135deg, #f8a5c2, #ee609c); /* Gradient background */
+}
+
+.stat2 {
+  background: linear-gradient(135deg, #48dbfb, #34e89e);
+}
+
+.stat3 {
+  background: linear-gradient(135deg, #feca57, #ff9f43);
+}
+.stat {
+  background: linear-gradient(135deg, #feca57, #ff9f43);
+}
+
+/* Style for icons */
+.stat svg,
+.stat1 svg,
+.stat2 svg,
+.stat3 svg {
+  margin-bottom: 10px; /* Add some space below the icon */
+  color: #fff; /* Set icon color */
+  font-size: 40px; /* Increase icon size */
+}
+
+/* Recent bookings and new users section */
+.mid-dash {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px; /* Adjusted margin */
+  width: calc(100% - 200px); /* Occupy whole screen width */
+}
+
+.left-dash {
+  width: 100%; /* Occupy whole space */
+  padding: 10px;
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recent bookings table container */
+.recent-bookings-table-container,
+.new-users-table-container {
+  max-height: 300px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Add vertical scroll bar */
+}
+
+/* Recent bookings table */
+.recent-bookings-table,
+.new-users-table {
+  width: calc(100% - 16px); /* Adjust width to accommodate scrollbar */
+  margin-top: 10px;
+  color: #49274a;
+  border-collapse: collapse; /* Collapse borders */
+}
+
+.recent-bookings-table th,
+.recent-bookings-table td,
+.new-users-table th,
+.new-users-table td {
+  padding: 12px; /* Increase padding for better readability */
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add bottom border */
+}
+
+.recent-bookings-table th,
+.new-users-table th {
+  background-color: #49274a; /* Dark purple */
+  color: #fff;
+  font-weight: bold; /* Make header text bold */
+}
+
+.recent-bookings-table tbody tr:nth-child(even),
+.new-users-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray */
+}
+
+.recent-bookings-table tbody tr:hover,
+.new-users-table tbody tr:hover {
+  background-color: #e0e0e0; /* Lighter gray on hover */
+}
+
+/* Add this CSS to reduce the width of the scrollbar */
+.recent-bookings-table-container::-webkit-scrollbar,
+.new-users-table-container::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar track */
+.recent-bookings-table-container::-webkit-scrollbar-track,
+.new-users-table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Style the scrollbar handle */
+.recent-bookings-table-container::-webkit-scrollbar-thumb,
+.new-users-table-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* On hover, add a darker color to the scrollbar handle */
+.recent-bookings-table-container::-webkit-scrollbar-thumb:hover,
+.new-users-table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Style for approval and rejection buttons */
+/* Style for approval and rejection buttons */
+.approval-button,
+.rejection-button {
+  background-color: #4caf50; /* Green for approval */
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Adjust padding for button size */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%; /* Ensure button takes full width */
+  box-sizing: border-box; /* Include padding in button width */
+}
+
+.rejection-button {
+  background-color: #f44336; /* Red for rejection */
+}
